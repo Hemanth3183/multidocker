@@ -1,0 +1,27 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            "name": "client",
+            "image": "hemanth318/multiclient",
+            "hostname": "client",
+            "essential": false
+        },
+        {
+            "name": "server",
+            "image": "hemanth318/multiserver",
+            "hostname": "api",
+            "essential": false
+        },
+        {
+            "name": "worker",
+            "image": "hemanth318/multiworker",
+            "hostname": "worker",
+            "essential": false
+        },
+        {
+            "name": "nginx",
+            "image": "hemanth318/multinginx"
+        }
+    ]
+}

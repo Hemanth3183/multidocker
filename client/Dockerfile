@@ -5,7 +5,7 @@ COPY ./package.json ./
 
 RUN npm install
 COPY . .
-RUN npm build
+RUN npm run build
 
 FROM nginx:latest
 EXPOSE 3000
