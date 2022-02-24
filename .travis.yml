@@ -19,7 +19,7 @@ after_success:
 - echo "$DOCKER_PWD" | docker login -u "$DOCKER_USERID" --password-stdin
 
 # Push images to Docker Hub
-- docker push hemanth318/multiclient
-- docker push hemanth318/multiserver
-- docker push hemanth318/multinginx
-- docker push hemanth318/multiworker
+  - docker push hemanth318/multiclient
+  - docker push hemanth318/multiserver
+  - docker push hemanth318/multinginx
+  - docker push hemanth318/multiworker
